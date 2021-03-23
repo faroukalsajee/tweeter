@@ -1,0 +1,33 @@
+header#main-header {
+  height: 400px;
+  width: 100%;
+  margin-top: 120px;
+  border: white 1px solid;
+  border-bottom:  #4056A1 4px solid;
+  /* background-color: #4056A1; */
+  /* background-image: url("../images/header-background.png"); */
+}
+
+@media (min-width: 800px) {
+  header#main-header {
+    width: 40%;
+    margin-top: 180px;
+    margin-left: 5%;
+    border-radius: 30px;
+    border: #4056A1 4px solid;
+
+  }
+}
+
+#avatar-image {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  color: #FF0000;
+  border-radius: 30%;
+}
+
+#user-name {
+  text-align: center;
+  font-weight: 500;
+}

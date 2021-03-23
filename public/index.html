@@ -1,29 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
+    <!-- Disabling Viewport Zooming -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
     <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+
+    <!-- Source Sans Pro Font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Bungee Font -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
+    <!-- Nav CSS -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <!-- New Tweet CSS -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+     <!-- Tweet CSS -->
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+    
     <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <!-- Char Count JS -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <!-- New Tweet JS -->
+    <script type="text/javascript" src="/scripts/new-tweet.js"></script>
+    <!-- Composer JS -->
+    <script type="text/javascript" src="/scripts/composer.js"></script>
+    
   </head>
 
   <body>
+
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+        <div id="nav-new-tweet-container">
+          <span id="nav-new-tweet-label"> 
+            <strong>Write</strong> a new tweet
+          </span>
+          <img id="nav-new-tweet-animated" src="./images/icons/arrow-down.svg" alt="animated arrow down" height="10%" width="auto" />
+        </div>
     </nav>
+    
+    <!-- Header with Avatar and username -->
+    <header id="main-header">
+      <div id="avatar-image-container">
+        <img id="avatar-image" src="./images/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+        <h2 id="user-name"> <strong>Farouk</strong> Alsajee</h2>
+      </div>
+    </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <!-- Page-specific content here -->
+    <main class="container">
+
+      <section class="new-tweet">
+        <div id="new-tweet-error-container">
+        </div>
+        <h2>Compose Tweet</h2>
+        <form id="new-tweet-form">
+          <textarea id="tweet-text-area" name="text" rows="1" placeholder="What are you humming about?"></textarea>
+          <div id="new-tweet-form-footer">
+            <input id="tweet-submit-button" type="submit" value="Tweet">
+            <span class="counter">140</span>
+          </div>
+        </form>
+      </section>
+
+      <section id="tweet-list">
+      <!-- This is where the tweets will be generated -->
+      </section>
+    
+      <img id="scroll-down" src="./images/icons/arrow-up.png" alt="Arrow up">
+
+    </main>
+
   </body>
 </html>
