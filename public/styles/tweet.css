@@ -1,0 +1,87 @@
+section#tweet-list {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+article.tweet header div{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+section#tweet-list article.tweet{
+  position: relative;
+  width: 100%;
+  opacity: 0.8;
+  margin-top: 1%; 
+  margin-bottom: 2.5%;
+  border: solid black 1px;
+}
+
+section#tweet-list article.tweet:hover {
+  box-shadow: 10px 10px #4056A1;
+  opacity: 1;
+}
+
+
+article header img.tweet-avatar {
+  margin: 2%;
+}
+article header .tweet-username{
+  margin-top: 2.8%;
+  margin-left: -1%;
+}
+
+.tweet-content {
+  position: relative;
+  width: 98%;
+  margin-left: 1%;
+  padding: 1%;
+  border-bottom: solid black 2px;
+  overflow-wrap: break-word;
+}
+
+.tweet-userhandle {
+  position: absolute;
+  right: 2%;
+  opacity: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+section#tweet-list article.tweet:hover .tweet-userhandle {
+  opacity: 0.5;
+}
+
+.tweet-btn-container {
+  padding-right: 3%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  /* padding: 1%; */
+}
+
+.tweet-btn {
+  padding: 3%;
+  height: 20px;
+  width: auto;
+}
+
+.footer-elapsed-time {
+
+  margin-bottom: 1%;
+  margin-left: 1%;
+}
+
+.tweet-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;  
+}
