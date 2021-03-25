@@ -2,7 +2,6 @@
 //    composer-char-counter.js
 
 // adding a red-text class if the textarea exceeds the character count
-console.log('nnnnnnnnnnn...');
 $(document).ready(function() {
   
   $('#tweet-text-area').on('keyup', function() {

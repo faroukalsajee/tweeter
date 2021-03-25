@@ -9,7 +9,6 @@ const initScrollElements = function() {
   $("#scroll-down").hide(); //hide your div initially
 
   const topOfOthDiv = $("#main-header").offset().top + 280;
-  console.log(topOfOthDiv);
   $(window).scroll(function() {
     if ($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
       $scrollDown.show(); //reached the desired point -- show div
