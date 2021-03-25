@@ -17,7 +17,9 @@
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #34a3cf;
+  background-image: url("/images/green-dust-and-scratches.png");
+
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
   display: -webkit-flex;
@@ -36,7 +38,8 @@ body {
 main {
   width: 90%;
   margin-left: 5%;
-  background-color: #f4f1ec;
+  background-image: url("/images/green-dust-and-scratches.png");
+  background-color: #34a3cf;
 }
  
 @media (min-width: 800px) {

@@ -20,9 +20,8 @@ section#tweet-list article.tweet{
   margin-bottom: 2.5%;
   border: solid black 1px;
 }
-
 section#tweet-list article.tweet:hover {
-  box-shadow: 10px 10px #4056A1;
+  box-shadow: 10px 10px white;
   opacity: 1;
 }
 

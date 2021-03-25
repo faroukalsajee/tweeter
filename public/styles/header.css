@@ -3,23 +3,18 @@ header#main-header {
   width: 100%;
   margin-top: 120px;
   border: white 1px solid;
-  border-bottom:  #2ab8f0 4px solid;
-  background-color: #CF9A3E;
+  border-bottom:  #34a3cf 3px solid;
+  background-color: #34a3cf;
   background-image: url("/images/green-dust-and-scratches.png");
 }
-
-container > section {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto; }
 
 @media (min-width: 800px) {
   header#main-header {
     width: 40%;
-    margin-top: 180px;
+    margin-top: 200px;
     margin-left: 5%;
     border-radius: 30px;
-    border: #4056A1 4px solid;
+    border: white 4px solid;
 
   }
 }
@@ -36,3 +31,5 @@ container > section {
   text-align: center;
   font-weight: 500;
 }
+
+

@@ -44,15 +44,13 @@ const renderError = function(errString) {
   $('#new-tweet-error-container').empty();
   $('#new-tweet-error-container').append(`
   <div id="new-tweet-error">
-    <img src="./images/icons/warning.png" alt="Warning Image" class="new-tweet-error-warning"/>
     <div id ="new-tweet-error-message">
       ${errString}
     </div>
-    <img src="./images/icons/warning.png" alt="Warning Image" class="new-tweet-error-warning"/>
   </div>
   `);
   $('#new-tweet-error-container').hide();
-  $('#new-tweet-error-container').slideDown(100);
+  $('#new-tweet-error-container').slideDown(50);
 };
 
 // Function that validates form input
@@ -71,7 +69,7 @@ const formValidator = function(data) {
     }
     // Case when the tweet is an empty string or null
   } else {
-    renderError('Tweet is empty. Words do not bite!');
+    renderError('Tweet is empty. Say somthing I am giving up on you!');
   }
 };
 
@@ -86,6 +84,7 @@ const escape = function(str) {
 
 // Creating each individual tweet element given a tweet object
 const createTweetElement = function(tweet) {
+
   return `
     <article class="tweet">
       <header>
@@ -100,9 +99,9 @@ const createTweetElement = function(tweet) {
         <div class="tweet-footer">
           <time class= "footer-elapsed-time">${getTime(tweet.created_at)}</time>
           <div class="tweet-btn-container">
-            <img class="tweet-btn tweet-flag" src="./images/icons/flag.png" />
-            <img class="tweet-btn tweet-retweet" src="./images/icons/retweet.png" />
-            <img class="tweet-btn tweet-like" src="./images/icons/like.png" />
+            <img class="tweet-btn tweet-flag" src="./images/flag.png" />
+            <img class="tweet-btn tweet-retweet" src="./images/retweet.png" />
+            <img class="tweet-btn tweet-like" src="./images/like.png" />
           </div>
         </div>
       </footer>
@@ -120,6 +119,7 @@ const renderTweets = function(tweets) {
     let $tweet = createTweetElement(oneTweet);
     $tweetList.prepend($tweet);
   }
+          
   // $tweetList.append(listOfTweets.join(''));
 };
 
@@ -184,7 +184,6 @@ const addSubmitListener = function() {
     }
   });
 };
-
 
 
 // Document.ready function will load the tweets initially and add the submit
