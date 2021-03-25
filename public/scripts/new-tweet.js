@@ -15,6 +15,6 @@ $(document).ready(function() {
   newTweetClickHandler();
 });
 // git commit in same branch
-//checkout master
-//git merge cleanup
+//git checkout master to go back to master
+// git merge cleanup :to merge cleanup
 // when in master, git merge cleanup
