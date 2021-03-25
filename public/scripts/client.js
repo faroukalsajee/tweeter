@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-unreachable */
 /* eslint-disable no-undef */
 /*
  * Client-side JS logic goes here
@@ -19,7 +21,7 @@ const getTime = function(date) {
   const diffDays = [Math.round(diffHours[0] / 24), 'day'];
   const diffMonths = [Math.round(diffDays[0] / 30.42), 'month'];
   const diffYears = [Math.round(diffMonths[0] / 12), 'year'];
-  // console.log(diffSeconds, diffMins, diffHours, diffDays, diffMonths, diffYears);
+  console.log(diffSeconds, diffMins, diffHours, diffDays, diffMonths, diffYears);
   const timeDenoms = [diffYears, diffMonths, diffDays, diffHours, diffMins, diffSeconds];
 
   for (let denom of timeDenoms) {
@@ -33,7 +35,7 @@ const getTime = function(date) {
     }
   }
   return time.length ? time + 'ago' : '1 second ago';
-  // return time + 'ago';
+  return time + 'ago';
 };
 
 // Function that appends error element to error container and
@@ -61,7 +63,7 @@ const formValidator = function(data) {
   // Check for empty string or null
   if (tweet) {
     if (tweet.length > 140) {
-      renderError("Tweet is too long. It's called a Tweet for a reason...");
+      renderError("Tweet is too long. It's a tweet not an essay");
     // Case for if the tweet is less than 140 characters and not an empty string
     } else {
       // Valid tweet
@@ -69,7 +71,7 @@ const formValidator = function(data) {
     }
     // Case when the tweet is an empty string or null
   } else {
-    renderError('Tweet is empty. Can you write something? Jeez...');
+    renderError('Tweet is empty. Words do not bite!');
   }
 };
 
@@ -116,9 +118,9 @@ const renderTweets = function(tweets) {
   const listOfTweets = [];
   for (let oneTweet of tweets) {
     let $tweet = createTweetElement(oneTweet);
-    listOfTweets.unshift($tweet);
+    $tweetList.prepend($tweet);
   }
-  $tweetList.append(listOfTweets.join(''));
+  // $tweetList.append(listOfTweets.join(''));
 };
 
 // Ajax function that GET's the tweets as a JSON
@@ -184,9 +186,12 @@ const addSubmitListener = function() {
 };
 
 
+
 // Document.ready function will load the tweets initially and add the submit
 //  - listener to accept any form submits
 $(document).ready(function() {
-  loadTweets();
+  // loadTweets();
   addSubmitListener();
+  renderTweets(data);
+
 });
