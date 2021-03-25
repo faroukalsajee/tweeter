@@ -21,7 +21,7 @@ section#tweet-list article.tweet{
   border: solid black 1px;
 }
 section#tweet-list article.tweet:hover {
-  box-shadow: 10px 10px white;
+  box-shadow: 10px 10px rgb(228, 180, 23);
   opacity: 1;
 }
 

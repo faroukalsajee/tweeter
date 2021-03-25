@@ -11,9 +11,9 @@ header#main-header {
 @media (min-width: 800px) {
   header#main-header {
     width: 40%;
-    margin-top: 200px;
-    margin-left: 5%;
-    border-radius: 30px;
+    margin-top: 150px;
+    margin-left: 4%;
+    border-radius: 50px;
     border: white 4px solid;
 
   }
@@ -22,9 +22,9 @@ header#main-header {
 #avatar-image {
   display: block;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 45px;
   color: #FF0000;
-  border-radius: 30%;
+  border-radius: 20%;
 }
 
 #user-name {

@@ -50,7 +50,7 @@ const renderError = function(errString) {
   </div>
   `);
   $('#new-tweet-error-container').hide();
-  $('#new-tweet-error-container').slideDown(50);
+  $('#new-tweet-error-container').slideDown(100);
 };
 
 // Function that validates form input
@@ -61,7 +61,7 @@ const formValidator = function(data) {
   // Check for empty string or null
   if (tweet) {
     if (tweet.length > 140) {
-      renderError("Tweet is too long. It's a tweet not an essay");
+      renderError("Tweet is too long. It's a tweet not an essay!");
     // Case for if the tweet is less than 140 characters and not an empty string
     } else {
       // Valid tweet
@@ -152,20 +152,20 @@ const formSubmit = function(data) {
 };
 
 // Handles the click and slides the new-tweet area down or up
-const newTweetClickHandler = function() {
-  $('#nav-new-tweet-container').on('click', function() {
-    $('.new-tweet').animate({
-      height: "toggle",
-    }, 300, function() {
-      $('#tweet-text-area').focus();
-    });
-  });
-};
+// const newTweetClickHandler = function() {
+//   $('#nav-new-tweet-container').on('click', function() {
+//     $('.new-tweet').animate({
+//       height: "toggle",
+//     }, 300, function() {
+//       $('#tweet-text-area').focus();
+//     });
+//   });
+// };
 
 
-$(document).ready(function() {
-  newTweetClickHandler();
-});
+// $(document).ready(function() {
+//   newTweetClickHandler();
+// });
 
 // Adds a submit event to the form element that will validate data, and send
 //  - escaped form data to the AJAX POST function
@@ -191,6 +191,6 @@ const addSubmitListener = function() {
 $(document).ready(function() {
   // loadTweets();
   addSubmitListener();
-  renderTweets(data);
+  // renderTweets(data);
 
 });
