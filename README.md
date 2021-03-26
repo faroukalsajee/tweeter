@@ -6,7 +6,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Produce
 
-![alt text] (/images/Screen Shot 2021-03-25 at 6.37.12 PM.png)
 
 ## Getting Started
 
