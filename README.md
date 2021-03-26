@@ -6,6 +6,12 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Produce
 
+## Learning Milestones
+
+* Creating a NodeJS application to focus on jQuery/front-end javascript and styling
+* Understand styling conventions and use Flexbox when needed
+* Use AJAX calls to interface with a local database and render the returned information
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
