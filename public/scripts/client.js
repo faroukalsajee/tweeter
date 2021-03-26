@@ -7,7 +7,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// Function that extracts the date and returns a string with the appropriate
+// Function extracts date and returns a string with appropriate
 //    - elapsed time in an appropriate time denomination
 const getTime = function(date) {
   let time = '';
@@ -38,8 +38,8 @@ const getTime = function(date) {
   return time + 'ago';
 };
 
-// Function that appends error element to error container and
-//    - hides it initally so the slide animation can be seen.
+// Function appends error element to error container and
+// - hides it initally so the slide animation can be seen.
 const renderError = function(errString) {
   $('#new-tweet-error-container').empty();
   $('#new-tweet-error-container').append(`
@@ -53,9 +53,7 @@ const renderError = function(errString) {
   $('#new-tweet-error-container').slideDown(100);
 };
 
-// Function that validates form input
-//    - return the data or
-//    - calls error funtion to rendor error message
+// Function that validates form input, return the data or calls error funtion to rendor error message
 const formValidator = function(data) {
   const tweet = data.slice(5);
   // Check for empty string or null
@@ -64,7 +62,6 @@ const formValidator = function(data) {
       renderError("Tweet is too long. It's a tweet not an essay!");
     // Case for if the tweet is less than 140 characters and not an empty string
     } else {
-      // Valid tweet
       return data;
     }
     // Case when the tweet is an empty string or null
@@ -72,10 +69,7 @@ const formValidator = function(data) {
     renderError('Tweet is empty. Say somthing I am giving up on you!');
   }
 };
-
-// Escape function that is used to make sure user is not
-//  entering in html code which we will insert and
-//  cause problems. Eg: Script tags
+// Escape function to make sure user is not entering in html code which we will insert and cause problems. Eg: Script tags
 const escape = function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
@@ -111,7 +105,7 @@ const createTweetElement = function(tweet) {
 
 
 // Renders tweets by looping through array of tweet objects and
-//  - appending to #tweet-list element
+//  - appends to #tweet-list element
 const renderTweets = function(tweets) {
   const $tweetList = $('#tweet-list');
   const listOfTweets = [];
@@ -120,7 +114,6 @@ const renderTweets = function(tweets) {
     $tweetList.prepend($tweet);
   }
           
-  // $tweetList.append(listOfTweets.join(''));
 };
 
 // Ajax function that GET's the tweets as a JSON
@@ -151,22 +144,6 @@ const formSubmit = function(data) {
     });
 };
 
-// Handles the click and slides the new-tweet area down or up
-// const newTweetClickHandler = function() {
-//   $('#nav-new-tweet-container').on('click', function() {
-//     $('.new-tweet').animate({
-//       height: "toggle",
-//     }, 300, function() {
-//       $('#tweet-text-area').focus();
-//     });
-//   });
-// };
-
-
-// $(document).ready(function() {
-//   newTweetClickHandler();
-// });
-
 // Adds a submit event to the form element that will validate data, and send
 //  - escaped form data to the AJAX POST function
 const addSubmitListener = function() {
@@ -176,7 +153,7 @@ const addSubmitListener = function() {
     const data = $(this).serialize();
     const isValid = formValidator(data);
 
-    // formValidator fn takes care of rendering errors when tweet is invalid
+    //renders errors when tweet is invalid
     if (isValid) {
       formSubmit(isValid);
       $('#tweet-text-area').val('');

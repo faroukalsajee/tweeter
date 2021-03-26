@@ -11,10 +11,10 @@ header#main-header {
 @media (min-width: 800px) {
   header#main-header {
     width: 40%;
-    margin-top: 150px;
-    margin-left: 4%;
+    margin-top: 120px;
+    margin-left: 5%;
     border-radius: 50px;
-    border: white 4px solid;
+    border: white 3px solid;
 
   }
 }
