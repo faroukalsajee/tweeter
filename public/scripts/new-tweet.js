@@ -14,7 +14,3 @@ const newTweetClickHandler = function() {
 $(document).ready(function() {
   newTweetClickHandler();
 });
-// git commit in same branch
-//git checkout master to go back to master
-// git merge cleanup :to merge cleanup
-// when in master, git merge cleanup
