@@ -3,6 +3,12 @@
 ### Tweeter is a single-page Tweeter clone. It is built using HTML, CSS, JS, jQuery and AJAX for front-end, and Node, Express and MongoDB for back-end. The intention of this project was to implement CSS and HTML styling along with incoporating JS functionality.
 
 ## Final Produce
+![alt text](https://github.com/faroukalsajee/tweeter/blob/master/public/images/Screen%20Shot%202021-03-25%20at%206.37.12%20PM.png)
+![alt text](https://github.com/faroukalsajee/tweeter/blob/master/public/images/Screen%20Shot%202021-03-25%20at%206.37.21%20PM.png)
+![alt text](https://github.com/faroukalsajee/tweeter/blob/master/public/images/Screen%20Shot%202021-03-25%20at%206.37.30%20PM.png)
+![alt text](https://github.com/faroukalsajee/tweeter/blob/master/public/images/Screen%20Shot%202021-03-25%20at%206.38.01%20PM.png)
+![alt text](https://github.com/faroukalsajee/tweeter/blob/master/public/images/Screen%20Shot%202021-03-25%20at%206.38.43%20PM.png)
+![alt text](https://github.com/faroukalsajee/tweeter/blob/master/public/images/Screen%20Shot%202021-03-25%20at%206.39.25%20PM.png)
 
 ## Learning Milestones
 
