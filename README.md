@@ -12,9 +12,9 @@
 
 ## Learning Milestones
 
-* Creating a NodeJS application to focus on jQuery/front-end javascript and styling
-* Understand styling conventions and use Flexbox when needed
-* Use AJAX calls to interface with a local database and render the returned information
+- Creating a NodeJS application to focus on jQuery/front-end javascript and styling
+- Understand styling conventions and use Flexbox when needed
+- Use AJAX calls to interface with a local database and render the returned information
 
 ## Getting Started
 
@@ -25,10 +25,10 @@
 
 ## Dependencies
 
-* node
-* body-parser
-* chance
-* express
-* md5
+- node
+- body-parser
+- chance
+- express
+- md5
 
 ### If you have any feedback or would like to get in touch, feel free to email me at faroukalsajee@gmail.com

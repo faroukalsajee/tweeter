@@ -3,7 +3,7 @@ header#main-header {
   width: 100%;
   margin-top: 120px;
   border: white 1px solid;
-  border-bottom:  #34a3cf 3px solid;
+  border-bottom: #34a3cf 3px solid;
   background-color: #34a3cf;
   background-image: url("/images/green-dust-and-scratches.png");
 }
@@ -15,16 +15,14 @@ header#main-header {
     margin-left: 5%;
     border-radius: 50px;
     border: white 3px solid;
-
   }
 }
-
 
 #avatar-image {
   display: block;
   margin: auto;
   margin-top: 45px;
-  color: #FF0000;
+  color: #ff0000;
   border-radius: 20%;
 }
 
@@ -35,4 +33,3 @@ header#main-header {
 .hide {
   display: none;
 }
-

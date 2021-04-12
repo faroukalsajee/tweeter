@@ -3,11 +3,13 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
- 
- html {
+
+html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -20,16 +22,13 @@ body {
   background-color: #34a3cf;
   background-image: url("/images/green-dust-and-scratches.png");
 
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 }
-
-
-
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
@@ -41,12 +40,12 @@ main {
   background-image: url("/images/green-dust-and-scratches.png");
   background-color: #34a3cf;
 }
- 
+
 @media (min-width: 800px) {
   main {
     width: 45%;
     margin-top: 140px;
-    margin-left: 5%
+    margin-left: 5%;
   }
 }
 

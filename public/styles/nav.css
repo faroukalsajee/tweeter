@@ -5,8 +5,8 @@ nav {
   z-index: 1000;
   background-image: url("/images/green-dust-and-scratches.png");
   background-color: #34a3cf;
-  color: #FFFFFF;
-  font-family: 'Bungee', cursive;
+  color: #ffffff;
+  font-family: "Bungee", cursive;
   padding: 2.5em;
   display: flex;
   flex-direction: row;
@@ -19,11 +19,11 @@ nav {
 }
 
 #nav-new-tweet-label {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   cursor: pointer;
 }
 
 #nav-new-tweet-animated {
- cursor: pointer;
- align-self: center;
+  cursor: pointer;
+  align-self: center;
 }

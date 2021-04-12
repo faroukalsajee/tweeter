@@ -5,18 +5,18 @@ section#tweet-list {
   margin-bottom: 50px;
 }
 
-article.tweet header div{
+article.tweet header div {
   display: flex;
   flex-direction: row;
   padding: 0;
   margin: 0;
 }
 
-section#tweet-list article.tweet{
+section#tweet-list article.tweet {
   position: relative;
   width: 100%;
   opacity: 0.8;
-  margin-top: 1%; 
+  margin-top: 1%;
   margin-bottom: 2.5%;
   border: solid black 1px;
 }
@@ -25,11 +25,10 @@ section#tweet-list article.tweet:hover {
   opacity: 1;
 }
 
-
 article header img.tweet-avatar {
   margin: 2%;
 }
-article header .tweet-username{
+article header .tweet-username {
   margin-top: 2.8%;
   margin-left: -1%;
 }
@@ -72,7 +71,6 @@ section#tweet-list article.tweet:hover .tweet-userhandle {
 }
 
 .footer-elapsed-time {
-
   margin-bottom: 1%;
   margin-left: 1%;
 }
@@ -82,5 +80,5 @@ section#tweet-list article.tweet:hover .tweet-userhandle {
   flex-direction: row;
   justify-content: space-between;
   padding: 0;
-  margin: 0;  
+  margin: 0;
 }

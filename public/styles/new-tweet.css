@@ -23,17 +23,17 @@
   font-weight: 500;
 }
 
-.counter{
+.counter {
   position: relative;
   right: 0;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
 
 #tweet-submit-button {
   /* background-color: #4056A1; */
   background-color: #34a3cf;
   background-image: url("/images/green-dust-and-scratches.png");
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   color: rgb(245, 245, 245);
   text-shadow: black 1px 1px;
   cursor: pointer;
@@ -43,7 +43,7 @@
   /* background-color: #0b97ce; */
   background-color: #34a3cf;
   background-image: url("/images/green-dust-and-scratches.png");
-  box-shadow: 2px 2px 2px white
+  box-shadow: 2px 2px 2px white;
 }
 
 #new-tweet-error {
@@ -63,12 +63,12 @@
 }
 
 .new-tweet-error-warning {
-  width:5%;
+  width: 5%;
   height: auto;
 }
 
 main section.new-tweet h2 {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
 
 .red-text {
