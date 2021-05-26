@@ -1,6 +1,6 @@
 # Tweeter Project
 
-### Tweeter is a single-page Tweeter clone. It is built using HTML, CSS, JS, jQuery and AJAX for front-end, and Node, Express and MongoDB for back-end. The intention of this project was to implement CSS and HTML styling along with incoporating JS functionality.
+Tweeter is a single-page Tweeter clone. It is built using HTML, CSS, JS, jQuery and AJAX for front-end, and Node, Express and MongoDB for back-end. The intention of this project was to implement CSS and HTML styling along with incoporating JS functionality.
 
 ## Final Product
 ![alt text](https://github.com/faroukalsajee/tweeter/blob/master/public/images/Screen%20Shot%202021-03-25%20at%206.37.12%20PM.png)
